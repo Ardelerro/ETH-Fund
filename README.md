@@ -1,0 +1,1 @@
+ETH FUND: a crowdsourcing tool to raise funds for any cause

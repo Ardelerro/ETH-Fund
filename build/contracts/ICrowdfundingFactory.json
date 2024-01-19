@@ -1,0 +1,379 @@
+{
+  "contractName": "ICrowdfundingFactory",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "_stablecoin",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_targetFunding",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract IPool",
+          "name": "_lendingPool",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_priceFeedAddress",
+          "type": "address"
+        }
+      ],
+      "name": "createCrowdfunding",
+      "outputs": [
+        {
+          "internalType": "contract Crowdfunding",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"_stablecoin\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_targetFunding\",\"type\":\"uint256\"},{\"internalType\":\"contract IPool\",\"name\":\"_lendingPool\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_priceFeedAddress\",\"type\":\"address\"}],\"name\":\"createCrowdfunding\",\"outputs\":[{\"internalType\":\"contract Crowdfunding\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ICrowdfundingFactory.sol\":\"ICrowdfundingFactory\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@aave/core-v3/contracts/interfaces/IPool.sol\":{\"keccak256\":\"0xbfd2077251c8dc766a56d45f4b03eb07f3441323e79c0f794efea3657a99747f\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://c6ff6221de0ea877932c73c0b99d3e4535f293053ae44f9f9d6b9d265e9af2f6\",\"dweb:/ipfs/QmSTaEKrhz1xNVnx4oBzWw8DenYPShVzJoP1A9GTEWkAzX\"]},\"@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol\":{\"keccak256\":\"0x33d4308d9407b4ee2297fc4ba5acce1a96a6c658189e2778a4f6b90e032fb3b5\",\"license\":\"AGPL-3.0\",\"urls\":[\"bzz-raw://978336a2a40229ccc7749344be890862ea12e17e9fffe5bb977ba3841de07b5a\",\"dweb:/ipfs/QmScNrQfDSPg1afJmkCty6fZkETUrWTmEXWeTmHoe7mSqa\"]},\"@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol\":{\"keccak256\":\"0xff95adc41b2bbda0c08208e66c1e2fd0d99fa6d8f937667c2b366ddf08f10eeb\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://734ac1a253d41ace0fe411359248a1534e530b85b3c0c9fe37931ee11580dbc6\",\"dweb:/ipfs/QmNSm1bqFo2x8EghUyShK34bU1esDeLCw1ZWPoRZwcoVvM\"]},\"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol\":{\"keccak256\":\"0xfe4e8bb4861bb3860ba890ab91a3b818ec66e5a8f544fb608cfcb73f433472cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://644cff84052e1e82b5bb502b2a46e8f142a62b0db4cd9b38200798ba8373c6f7\",\"dweb:/ipfs/QmTa99QHrJBn3SXDizquPBUiTxVCNKQrHgaWJhuds5Sce2\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6\",\"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c\",\"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12\",\"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF\"]},\"project:/contracts/AaveVault.sol\":{\"keccak256\":\"0xbef04dc32845bbce288032b395bbc1b91be47dee5666dce46dd673f0ac0fa93f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://433e3aa1177e89e737f8ce5c25bb6bb97324e19cd89e1cea98862c7541758cfc\",\"dweb:/ipfs/QmTy5LiZCY5cFoT5H65VaigPThLCaKVLGYnYeaQ7628eXP\"]},\"project:/contracts/Crowdfunding.sol\":{\"keccak256\":\"0xe590f0cfc2f2c2edd6b32564b0bfccf6246a139daa4198ee7aa127e368f1e111\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://061515e48b5a409dd786284448085d140e7e691e6c555b93e39994905c26829c\",\"dweb:/ipfs/QmXN8ttqVWbvNZL4Udq1ZUtnwwUgV3FXoCAux6LGZEBMqR\"]},\"project:/contracts/interfaces/IAaveVault.sol\":{\"keccak256\":\"0xe47ba39105c44c9f010d6f0bdd2e55963ea87689c160d5b0563c42b962603105\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6329e16337f151c6ada4073d56a8acca3a21e74563fd04c0eb28bb85523c24c6\",\"dweb:/ipfs/QmXKBYJSQMs3ttCLLF3bymQaQQxTbbA2MMNjXiXSZASPDc\"]},\"project:/contracts/interfaces/ICrowdfunding.sol\":{\"keccak256\":\"0x3c32fe7921c6f78b32e4af0afed00080b4800234737ccbb99a19d9f2ed241aef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://037c49dad68a5ade072ea4e1612a6d00e69607734a57c3e0b6a5cc6fa39ebf9b\",\"dweb:/ipfs/QmYrGpJMQmrv2AVPhf4M7xCjrc73N5AJETU6Qr7RXgpFXr\"]},\"project:/contracts/interfaces/ICrowdfundingFactory.sol\":{\"keccak256\":\"0xf5c5dcc65b7450a334428b9cdd67bc87abc21c762d07409bec1708dbda9a0085\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3094790e29ec398955273fb60e0e4d89dbe98efe0fa97477ce74f680eef757ba\",\"dweb:/ipfs/QmWPQPzg35NrPCGscHxpcQdWJry86dmEdWk4AypSXhinRf\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\nimport \"@aave/core-v3/contracts/interfaces/IPool.sol\";\r\nimport \"../Crowdfunding.sol\";\r\n\r\n\r\ninterface ICrowdfundingFactory {\r\n    function createCrowdfunding(\r\n        IERC20 _stablecoin,\r\n        uint256 _targetFunding,\r\n        IPool _lendingPool,\r\n        address _priceFeedAddress\r\n    ) external returns (Crowdfunding);\r\n}",
+  "sourcePath": "C:\\Users\\tassm\\Documents\\eth_fund\\contracts\\interfaces\\ICrowdfundingFactory.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ICrowdfundingFactory.sol",
+    "exportedSymbols": {
+      "AaveVault": [
+        1672
+      ],
+      "AggregatorV3Interface": [
+        1245
+      ],
+      "Context": [
+        1501
+      ],
+      "Crowdfunding": [
+        1931
+      ],
+      "DataTypes": [
+        1199
+      ],
+      "FundingStatus": [
+        1681
+      ],
+      "IAaveVault": [
+        2050
+      ],
+      "ICrowdfunding": [
+        2081
+      ],
+      "ICrowdfundingFactory": [
+        2103
+      ],
+      "IERC20": [
+        1471
+      ],
+      "IPool": [
+        638
+      ],
+      "IPoolAddressesProvider": [
+        847
+      ],
+      "Ownable": [
+        1393
+      ]
+    },
+    "id": 2104,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2083,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:12"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "id": 2084,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 2104,
+        "sourceUnit": 1472,
+        "src": "60:56:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aave/core-v3/contracts/interfaces/IPool.sol",
+        "file": "@aave/core-v3/contracts/interfaces/IPool.sol",
+        "id": 2085,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 2104,
+        "sourceUnit": 639,
+        "src": "118:54:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/Crowdfunding.sol",
+        "file": "../Crowdfunding.sol",
+        "id": 2086,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 2104,
+        "sourceUnit": 1932,
+        "src": "174:29:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICrowdfundingFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2103,
+        "linearizedBaseContracts": [
+          2103
+        ],
+        "name": "ICrowdfundingFactory",
+        "nameLocation": "219:20:12",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "95e0977f",
+            "id": 2102,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCrowdfunding",
+            "nameLocation": "256:18:12",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2089,
+                  "mutability": "mutable",
+                  "name": "_stablecoin",
+                  "nameLocation": "292:11:12",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2102,
+                  "src": "285:18:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$1471",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "id": 2088,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2087,
+                      "name": "IERC20",
+                      "nameLocations": [
+                        "285:6:12"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1471,
+                      "src": "285:6:12"
+                    },
+                    "referencedDeclaration": 1471,
+                    "src": "285:6:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1471",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2091,
+                  "mutability": "mutable",
+                  "name": "_targetFunding",
+                  "nameLocation": "322:14:12",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2102,
+                  "src": "314:22:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2090,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "314:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2094,
+                  "mutability": "mutable",
+                  "name": "_lendingPool",
+                  "nameLocation": "353:12:12",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2102,
+                  "src": "347:18:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPool_$638",
+                    "typeString": "contract IPool"
+                  },
+                  "typeName": {
+                    "id": 2093,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2092,
+                      "name": "IPool",
+                      "nameLocations": [
+                        "347:5:12"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 638,
+                      "src": "347:5:12"
+                    },
+                    "referencedDeclaration": 638,
+                    "src": "347:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPool_$638",
+                      "typeString": "contract IPool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2096,
+                  "mutability": "mutable",
+                  "name": "_priceFeedAddress",
+                  "nameLocation": "384:17:12",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2102,
+                  "src": "376:25:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "274:134:12"
+            },
+            "returnParameters": {
+              "id": 2101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2100,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2102,
+                  "src": "427:12:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Crowdfunding_$1931",
+                    "typeString": "contract Crowdfunding"
+                  },
+                  "typeName": {
+                    "id": 2099,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2098,
+                      "name": "Crowdfunding",
+                      "nameLocations": [
+                        "427:12:12"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1931,
+                      "src": "427:12:12"
+                    },
+                    "referencedDeclaration": 1931,
+                    "src": "427:12:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Crowdfunding_$1931",
+                      "typeString": "contract Crowdfunding"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:14:12"
+            },
+            "scope": 2103,
+            "src": "247:194:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2104,
+        "src": "209:235:12",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "33:411:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.20+commit.a1b79de6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2024-01-19T03:24:00.352Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
